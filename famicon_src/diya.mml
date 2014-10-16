@@ -1,0 +1,1315 @@
+//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+//
+// ダイヤを掘ろう！テーマソング「Let's Mining」
+//
+// 作詞　　　：ななこっち★（00264 なの）、青い鴉（ぶるくろ）氏
+// 作曲　　　：ななこっち★（00264 なの）
+// 動画　　　：ななこっち★（00264 なの）
+// 出演　　　：NEET株式会社アナログゲーム事業部、他
+// 歌　　　　：初音ミク
+// 伴奏　　　：初音ミク
+// ベース　　：初音ミク
+// 対応音源　：VOALOID3(初音ミク)+TiMidiTy++ / TiMidiTy++ / MA-3(40和音着メロ)
+// 著作者　　：NEET株式会社
+// MMLかき 　：ななこっち★（00264 なの）
+// ライセンス：転載不可、改変不可
+//
+//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+// ちょいと設定
+
+Int MODE=0
+
+MODE=1 // all_mp3
+//MODE=2 // all_vocaloid
+//MODE=3 // all_vocaloid_rhythm
+//MODE=4 // bgmonly_mp3
+//MODE=5 // bgmonly_vocaloid
+//MODE=6 // bgmonly_vocaloid_rhythm
+//MODE=7 // MA-3
+
+// ループ回数(BGMのみ, BGMONLY=0ですと2に固定) Default=7
+Int LOOP=7
+
+// MODE=0の場合の詳細設定
+// ↓歌なしのBGMだけにする(イントロなし、ループ数調整可) Default=0
+Int BGMONLY=0
+// ↓VOCALOIDなくてもまともに聞こえるようにする場合0 VOCALOIDの場合1 Default=0
+Int VOCALOID=0
+// 歌とバックのスイッチ Default=1
+Int VOCALOIDPART=1
+// リズムのスイッチ Default=1
+Int RHYTHMPART=1
+// 歌詞ON=1 Default=1
+Int LYRICDISPLAY=1
+// SMAF作成
+Int SMAFMODE=0
+
+//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+//
+// IT業務部　部長の　00264 なのです。
+//
+// ブース番号：H36 ブース名：NEET株式会社
+// あなたのマイン○○フトパワーが試される！？
+// ダイヤモンドをたくさん掘って集めるゲームです。
+// （2～4人用。プレイ時間30分） 
+// http://www.lm4d.com/
+//
+// と思いきや
+// これの作曲時間（メロディー構想）のみは、約３分で終わってました。
+// 一度、MMLを10分そこらで、書いていていて、サンプルを出していたのですが
+// そのファイルは、なんと紛失；；
+// 仕方ないので・・・
+// 歌謡タイピング劇場で、３台打ちで構ってほしい方も同時にいたので
+// 面倒なので、「これのメロディー」ぐらいまで、大体30分で、３台打ちしながら
+// 作ってしまいました。
+// ※３台打ち＝３台で同時にタイピングするものです。
+// ※以外に、聖徳太子状態になるのが、好きなうちでした。
+//
+// 最初から構想にあったのですが、ほぼオールボカロ（無料7G大量音源持ってるのに）
+// ということになりました。。。
+//
+// 聴くと、残念ながら、ピアノとドラムの音しかなりません。
+// きちんとオーサリングして、ちゃんとした音になるはずです。
+//
+// ご参考までに・・・
+// この楽曲を作成している風景（＋前のアーガーデュエル）を
+// テレビ朝日さんに取材してもらうこととなりました。・・・が
+// 一応放映されるかは、わかりません。
+// 改めて、その時、MMLを打ち直します。。。汗
+//
+// おまけ・・・
+// http://blog.fujitv.co.jp/supernewstokuho/D20140114.html
+// これで「働けない人もいる、お金を作ることが全くできない人も
+// いる可能性もある」といっているハゲおっさんが、あたしです。
+//
+//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+// 歌詞
+IF(0){
+
+タテはスコップ　ヨコはつるはし　掘り進め
+照らせたいまつ　ダイヤのために　掘り進め
+重ねてスコップ　拾えたいまつ　掘り進め
+タテにスコップ　ヨコにつるはし　掘り進め
+拾えたいまつ　ダイヤのために　掘り進め
+コンボは決まる　ロマンは光る
+パズルみたく　採掘をしよう
+
+ジャックはどこでも　クィーンは斜め
+キングよ貫け　ジョーカーは強い
+スコップ使え　つるはし使え
+岩盤貫き　ダイヤを探せ
+
+ーーーーー
+木のスコップ　鉄のスコップ　掘り進め
+金のスコップ　ダイヤのスコップ　掘り進め
+重ねてつるはし　燃えよたいまつ　掘り進め
+木のつるはし　鉄のつるはし　掘り進め
+金のつるはし　ダイヤのつるはし　掘り進め
+コンボを決めて　ロマンを光らせ
+パズルみたく　採掘をしよう
+
+エースで実は　キングを掘れる
+コンボを決めて　逆転狙え
+スコップ使え　つるはし使え
+岩盤貫き　ダイヤを探せ
+}
+
+//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+// 使用TiMidity++パッチ
+IF(0) {
+
+HS TR-808 Drums.sf2 (VOCALOIDのみでも必要)
+
+izumo patch inst/GUS/clarinet.pat
+FluidR3GM.SF2
+5.7bank2.sf2
+Titanic_200_GMGS_1.2.sf2
+
+}
+//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+
+// define
+
+TrackName={"ダイヤを掘ろう！「Let's Mining」"}
+Copyright={"NEET株式会社（00264 なの＝ぱぷぅ）"}
+
+IF(MODE=1) {
+	BGMONLY=0
+	VOCALOID=0
+	VOCALOIDPART=1
+	RHYTHMPART=1
+	LYRICDISPLAY=1
+}
+
+IF(MODE=2) {
+	BGMONLY=0
+	VOCALOID=1
+	VOCALOIDPART=1
+	RHYTHMPART=0
+	LYRICDISPLAY=0
+}
+
+IF(MODE=3) {
+	BGMONLY=0
+	VOCALOID=1
+	VOCALOIDPART=0
+	RHYTHMPART=1
+	LYRICDISPLAY=0
+}
+
+IF(MODE=4) {
+	BGMONLY=1
+	VOCALOID=0
+	VOCALOIDPART=1
+	RHYTHMPART=1
+	LYRICDISPLAY=0
+}
+
+IF(MODE=5) {
+	BGMONLY=1
+	VOCALOID=1
+	VOCALOIDPART=1
+	RHYTHMPART=0
+	LYRICDISPLAY=0
+}
+
+IF(MODE=6) {
+	BGMONLY=1
+	VOCALOID=0
+	VOCALOIDPART=0
+	RHYTHMPART=1
+	LYRICDISPLAY=0
+}
+
+IF(MODE=7) {
+	BGMONLY=0
+	VOCALOID=0
+	VOCALOIDPART=1
+	RHYTHMPART=1
+	LYRICDISPLAY=0
+	SMAFMODE=3
+}
+
+Int VV=1
+Int K=1
+
+#v127={Expression(127)}
+#v120={Expression(120)}
+#v110={Expression(110)}
+#v100={Expression(100)}
+#v90={Expression(90)}
+#v80={Expression(80)}
+#v80={Expression(70)}
+#v0={Expression(0)}
+
+IF(SMAFMODE<>0){
+	Expression.Frequency(4);
+	//Modulation.Frequency(16);
+}
+
+#time5macro={
+	IF(BGMONLY=0) {
+		IF(SMAFMODE=0) {
+			Time(5:0:0)
+		}
+	}
+}
+
+Function VVoice(v) {
+	IF(VOCALOID=0) {
+		IF(SMAFMODE=3) {
+			Voice(v,124,2)
+		} ELSE { IF(SMAFMODE=7) {
+				Voice(v,124,2)
+			} ELSE {
+				Voice(v)
+			}
+		}
+	}
+}
+
+Function Ex(v1,v2,t) {
+	IF(VV=1) {
+//		IF(SMAFMODE=0) {
+			Expression.onTime(v1,v2,t)
+//		}
+	}
+}
+
+Function LoopPlay(Str Mml, Str Add) {
+	Str _MML
+	_MML=_MML + #STR(Mml)
+	IF(BGMONLY=0) {
+		LOOP=2
+	}
+	IF(SMAFMODE<>0) {
+		LOOP=1
+	}
+	For (Int i = 1; i < LOOP; i++) {
+		_MML=_MML + #STR(Add) + #STR(Mml)
+	}
+	IF(SMAFMODE<>0) {
+		_MML=_MML + #STR(Add)
+	}
+	_MML
+}
+
+// Lyric define
+Function L(Str s) {
+	IF(LYRICDISPLAY=1) {
+		IF(K=1) {
+			Lyric=s
+		}
+	}
+}
+
+Str LN={L{""}}
+Str LI0={L{"ダイヤぁぁぁぁぁぁ"}}
+Str LI1={L{"掘ろぉぉぉぉぉぉぅ"}}
+Str L01={L{"タテはスコップ"}}
+Str L02={L{"ヨコはつるはし"}}
+Str L03={L{"掘り進め"}}
+Str L04={L{"照らせたいまつ"}}
+Str L05={L{"ダイヤのために"}}
+Str L06={L{"重ねてスコップ"}}
+Str L07={L{"拾えタイマツ"}}
+Str L08={L{"タテにスコップ"}}
+Str L09={L{"ヨコにつるはし"}}
+Str L10={L{"拾えたいまつ"}}
+Str L11={L{"ダイヤのために"}}
+Str L12={L{"コンボは決まる"}}
+Str L13={L{"ロマンは光る"}}
+Str L14={L{"パズルみたく"}}
+Str L15={L{"採掘をしよう"}}
+Str L16={L{"ジャックはどこでも"}}
+Str L17={L{"クィーンは斜め"}}
+Str L18={L{"キングよ貫け"}}
+Str L19={L{"ジョーカーは強い"}}
+Str L20={L{"スコップ使え"}}
+Str L21={L{"つるはし使え"}}
+Str L22={L{"岩盤貫き"}}
+Str L23={L{"ダイヤを探せ"}}
+Str L24={L{"木のスコップ"}}
+Str L25={L{"鉄のスコップ"}}
+Str L26={L{"金のスコップ"}}
+Str L27={L{"ダイヤのスコップ"}}
+Str L28={L{"重ねてつるはし"}}
+Str L29={L{"燃えよたいまつ"}}
+Str L30={L{"木のつるはし"}}
+Str L31={L{"鉄のつるはし"}}
+Str L32={L{"金のつるはし"}}
+Str L33={L{"ダイヤのつるはし"}}
+Str L34={L{"コンボを決めて"}}
+Str L35={L{"ロマンを光らせ"}}
+Str L36={L{"エースで実は"}}
+Str L37={L{"キングを掘れる"}}
+Str L38={L{"コンボを決めて"}}
+Str L39={L{"逆転狙え"}}
+
+// tempo track
+TR(11)
+	VVoice(1)
+	IF(BGMONLY=0) {
+		IF(SMAFMODE=0) {
+			Tempo 140
+			r1
+			Tempo 135
+			r1
+			Tempo 130
+			r1
+			Tempo 80
+			Time(5:0:0)
+		}
+	}
+	Tempo 160
+
+// intro
+
+IF(VOCALOIDPART=1) {
+	IF(BGMONLY=0) {
+		IF(SMAFMODE=0) {
+			TR(4)
+				v120
+				VVoice(Bassoon)
+				o4
+				#v127
+				LI0
+				e16e16e4.^2
+				^1^1^1^1
+				Time(4:3:0)
+				Expression.onTime(127,0,!1^4)
+
+			TR(3)
+				v120
+				o4
+				r1
+				VVoice(AltoSax)
+				#v127
+				LI0
+				g#16g#16g#4.^2
+				^1^1^1
+				Time(4:3:0)
+				Expression.onTime(127,0,!1^2)
+
+			TR(2)
+				v120
+				o4
+				r1r1
+				VVoice(AltoSax)
+				#v127
+				LI0
+				b16b16b4.^2
+				^1^1^1
+				Time(4:3:0)
+				Expression.onTime(127,0,!1^2.)
+
+			TR(1)
+				v120
+				o6
+				[3 r1]
+				VVoice(Clarinet)
+				#v127
+				LI1
+				e16e16e4.^2
+				^1^1
+				Time(4:3:0)
+				LN
+				Expression.onTime(127,0,!1^1)
+		}
+	}
+}
+
+#bassintro={
+	l4
+	#v120
+	eg#b>c# ec#<bg#
+	a>c#ef# gf#ec#<
+	eg#b>c#ec#<bg#
+	bbaag#g#f#f#
+}
+
+// all
+
+#vcintro1={
+	l12
+	#v90
+	[3
+	rre rrr err rrr
+	err rre rrr rrr
+	]
+
+	rr#v80 f#
+	[7 #v90 f# #v80 f# #v70 f#]
+	#v90
+}
+
+#vcintro2={
+	l12
+	#v90
+	rrb rrr brr rrr
+	brr rrb rrr rrr
+	>
+	rrc# rrr c#rr rrr
+	c#rr rrc# rrr rrr
+	<
+	rrb rrr brr rrr
+	brr rrb rrr rrr
+	>
+	rr#v80 d#
+	[7 #v90 d# #v80 d# #v70 d#]
+	#v100<
+}
+
+#vcintro3={
+	l12
+	#v90
+	rrg# rrr g#rr rrr
+	g#rr rrg# rrr rrr
+
+	rra rrr arr rrr
+	arr rra rrr rrr
+
+	rrg# rrr g#rr rrr
+	g#rr rrg# rrr rrr
+
+	rr #v80 b
+	[7 #v90 b #v80 b #v70 b]
+	#v100
+}
+
+#melody1={
+	#voiceoff
+	// たては　すこっぷ よこは
+	L01 l12g#6gg#6g g#rb L02 d#ef#
+	// つるはし ほりすすめ
+	l12g#6gg#6b L03 ref#g#ab>
+	// てらせた　いまつ つ　だい
+	L04 l12c#6cc#6c c#6e e< L05 ab>
+	// やのため ほりすすめ
+	l12c#6cc#6e L03 r<<b>c#d#ef#
+
+	// かさねて スコップ
+	L06 l12g#6gg#6g g#6b rrb
+	// ひろえた いま  つ
+	L07 l12g#6gg#6g g#6b rrf#
+	//ー
+	&Ex(127,64,!1)f#1 #voiceoff
+
+	// ほりすすめ
+	r2  L03 r <b>c#d#ef#
+
+	// たてに　すこっぷ よこに
+	L08 l12g#6gg#6g g#rb L09 d#ef#
+	// つるはし ほりすすめ
+	l12g#6gg#6b L03 ref#g#ab>
+	// ひろえた いまつ だい
+	L10 l12c#6cc#6c c#6e e< L11 ab>
+	// やのため ほりすすめ
+	l12c#6cc#6e L03 r<<b>c#d#ef#
+
+	#voiceon
+	// コンボは きまる
+	L12 l12g#6gg#6g g#g#b r4
+	// ロマンは ひかる
+	L13 l12a6g#a6g# aa>c#<r4
+	// パズルみたく さいくつをし
+	L14 l12bbb >c#c#c# L15 dddd#d#d#
+	// よ おー
+	e4 rre ^4 r4
+
+	#voiceoff
+	// ジャックは　どこでも
+	L16 err e6d# c#6c# e6e
+	// クイーンは　ななめ
+	L17 d#6d#4c#       <bb>d# rrr
+	// キングよ つらぬけ
+	L18 c#6c#<b6b a6a>c#6c#<
+	// ジョーカは つよい
+	L19 b4a6a12 g#g#b rrr>
+
+	#voiceon
+	//スコップ　つかえ
+	L20 ered#rd# 	c#6c#Ex(127,90,!4)e4 #voiceon
+	//つるはし　つかえ
+	L21 d#6d#c#6c#  <b6b>Ex(127,90,!4)d#4 #voiceon
+	//がんばん つらぬき
+	L22 c#6c#d#6d# e6e f6f
+	//ダイヤをさがせ
+	L23 f#6f# e6e d#6f#rre&
+	Ex(127,64,!1^1)e1^1
+	LN
+	r1r1
+	<
+}
+
+#melody2={
+	#voiceoff
+	// きいのすこっぷ　てつの
+	L24 l12g#6gg#6g g#rb L25 d#ef#
+	// すこっぷ ほりすすめ
+	l12g#6gg#rb L03 ref#g#ab>
+	// きんのすこっぷ　だいや
+	L26 l12c#6cc#6c c#re < L27 g#ab>
+	// のすこっぷ　ほりすすめ
+	l12c#6cc#re L03 r<<b>c#d#ef#
+
+	// かさねて つるはし
+	L28 l12g#6gg#6g g#6bg#6b
+	// つけよたいまつ
+	L29 l12g#6gg#6g g#6b rrf#
+	//ー
+	&Ex(127,64,!1)f#2.r4 #voiceoff
+
+	// ほりすすめ
+	r2  L03 r <b>c#d#ef#
+
+	#voiceon
+	// きぃのつ るはし　てつの
+	L30 l12g#6gg#6g g#6 IF(VOCALOID=0){b12}ELSE{b24b24} L31 d#ef#
+	// つるはし ほりすすめ
+	l12g#6gg#6b L03 ref#g#ab>
+	// きんのつ　るはし　だいや
+	L32 l12c#6cc#6c c#6 IF(VOCALOID=0){e12}ELSE{e24e24}< L33 g#ab>
+	// のつるはし ほりすすめ
+	l12c#6cc#c#e L03 r<<b>c#d#ef#
+
+	// コンボを　きめて
+	L34 l12g#6gg#6g g#6g#b6r
+	// ロマンを　ひからせ
+	L35 l12a6g#a6g# a6g#a6>c#<
+	// パズルみたく さいくつをし
+	L14 l12bbb >c#c#c# L15 dddd#d#d#
+	// よ おー
+	e4 rre ^4 r4
+
+	#voiceoff
+	// エースで　じつは
+	L36 Ex(127,100,!4) e4 #voiceoff d#6d# c#6c# e6r
+	// キングを　ほれる
+	L37 d#6d#c#6c#   <b6b>d#rr
+	// コンボを きめて
+	L38 c#6c#<b6b a6a>c#4<
+	// ぎゃくてんねらえ
+	L39 b6ba6a g#6g#brr>
+
+	#voiceon
+	//スコップ　つかえ
+	L20 ered#rd# 	c#6c#Ex(127,100,!4)e4 #voiceon
+	//つるはし　つかえ
+	L21 d#6d#c#6c#  <b6b>Ex(127,100,!4)d#4 #voiceon
+	//がんばん つらぬき
+	L22 c#6c#d#6d# e6e f6f
+	//ダイヤをさがせ
+	L23 f#6f# e6e d#6f#rre&
+	Ex(127,60,!1^1)e1^1
+	LN
+	r1r1
+}
+
+#bass1={
+	#v120
+	l4
+	eg#b>c# ec#<bg#
+	a>c#ef# gf#ec#<
+	eg#b>c#ec#<bg#
+	<b>c#d#f# bf#d#<b>
+
+	eg#b>c# ec#<bg#
+	a>c#ef# gf#ec#<
+	eg#bg# a>c#ec#
+	<b>d#f#d# l12 eee ddd c#c#c# <bbb
+
+}
+
+#bass2={
+//	#v120
+	l4
+	aaa6e12a
+	g#g#eg#
+	f#b>c#d#
+	edc#<b
+	aaa6e12a
+	g#g#g#6d#12g#
+	f#f#f#f#
+	bag#f#
+}
+
+#bass3={
+//	#v120
+	eg#b>c#
+	ec#<bg#
+	ac#ef
+	f#<b>c#d#
+}
+
+#bass4={
+//	#v120
+	eg#b>c#
+	ec#<bg#
+	ac#ef#
+	gf#ec#
+	bd#f#g#
+	l12bbbaaag#g#g#f#f#f#
+	err rre rrr rreEx(127,80,!1^1^1)e^1^1^1
+}
+
+#vca1={
+	#v90
+	l12
+	[3
+		rre rrr err rrr
+		err rre rrr rrr
+	]
+
+	rrf# rrr f#rr rrr
+	f#rr rrf# rrr rrr
+
+	[3
+		rre rrr err rrr
+		err rre rrr rrr
+	]
+	[4 #v90 f# #v80 f# #70 f#]
+	#v90
+	err rre &e6e eee
+
+}
+
+#vca2={
+	#v90
+	l12
+	rrb rrr brr rrr
+	brr rrb rrr rrr
+	>
+	rrc# rrr c#rr rrr
+	c#rr rrc# rrr rrr
+	<
+	rrb rrr brr rrr
+	brr rrb rrr rrr
+
+	>
+	rrd# rrr d#rr rrr
+	d#rr rrd# rrr rrr
+	<
+	//
+	rrb rrr brr rrr
+	brr rrb rrr rrr
+	>
+	rrc# rrr c#rr rrr
+	c#rr rrc# rrr rrr
+	<
+	rrb rrr brr rrr
+	>
+	c#rr rrc# rrr rrr
+	[4 #v90 d# #v80 d# #70 d#]
+	#v90
+	<
+	brr rrb &b6b bbb
+}
+
+#vca3={
+	#v90
+	l12
+	rrg# rrr g#rr rrr
+	g#rr rrg# rrr rrr
+
+	rra rrr arr rrr
+	arr rra rrr rrr
+
+	rrg# rrr g#rr rrr
+	g#rr rrg# rrr rrr
+
+	rrb rrr brr rrr
+	brr rrb rrr rrr
+
+	rrg# rrr g#rr rrr
+	g#rr rrg# rrr rrr
+
+	rra rrr arr rrr
+	arr rra rrr rrr 
+
+	rrg# rrr g#rr rrr
+	arr rra rrr rrr
+	[4 #v90 b #v80 b #70 b]
+	#v90
+	g#rr rrg# &g#6g# g#g#g#
+}
+
+#vcb1={
+	err rre rrr rrr
+	d#rr rrd# rrr rrr
+	c#4d#4e4f#4
+	g#4f#4e4d4
+	err rre rrr rrr
+	d#rr rrd# rrr rrr
+	err rre rrr rrr
+	f#rr rrf# rrf# f#f#f#
+}
+
+#vcc1={
+	rre rrr err rrr
+	err rre rrr rrr
+
+	rre rrr err rrr
+	rr#v80 f#
+	[3 #v90 f# #v80 f# #v70 f#]
+}
+
+#vcd1={
+	[2
+		rre rrr err rrr
+		err rre rrr rrr
+	]
+	rrf# rrr f#rr rrr
+	f#rr rrf# rrr rrr
+
+	#v100 err rre rrr rr
+	IF(VOCALOID=0){r96r96r96}
+	Ex(127,80,!1^1^1)d#^1^1^1
+}
+
+#vcb2={
+	>
+	c#rr rrc# rrr rrr
+	<brr rrb rrr rrr
+	a4b4>c#4d#4
+	e4d4c#4<b4>
+	c#rr rrc# rrr rrr
+	<brr rrb rrr rrr
+	>c#rr rrc# rrr rrr
+	d#rr rrd# rrd# d#d#d#
+}
+
+#vcc2={
+	<
+	rrb rrr brr rrr
+	brr rrb rrr rrr
+	>rrc# rrr c#rr rrr
+	rr#v80 d#
+	[3 #v90 d# #v80 d# #v70 d#]
+	<
+}
+
+#vcd2={
+	<
+	rrb rrr brr rrr
+	brr rrb rrr rrr
+	>rrc# rrr c#rr rrr
+	c#rr rrc# rrr rrr
+	rrd# rrr d#rr rrr
+	d#rr rrd# rrr rrr
+	<
+	#v100 brr rrb rrr rr
+	IF(VOCALOID=0){r96r96}
+	Ex(127,80,!1^1^1)b^1^1^1
+}
+
+#vcb3={
+	#v90
+	arr rra rrr rrr
+	g#rr rrg# rrr rrr
+	#v0
+	a4b4>c#4d#4
+	e4d4c#4<b4
+	#v90
+	arr rra rrr rrr
+	g#rr rrg# rrr rrr
+	arr rra rrr rrr
+	brr rrb rrb bbb
+}
+
+#vcc3={
+	rrg# rrr g#rr rrr
+	g#rr rrg# rrr rrr
+
+	rra rrr arr rrr
+	rr#v80 b
+	[3 #v90 b #v80 b #v70 b]
+
+}
+
+#vcd3={
+	rrg# rrr g#rr rrr
+	g#rr rrg# rrr rrr
+	rra rrr arr rrr
+	arr rra rrr rrr
+	rrb rrr brr rrr
+	brr rrb rrr rrr
+
+	#v100 g#rr rrg# rrr rr
+	IF(VOCALOID=0){r96}
+	Ex(127,80,!1^1^1)g#^1^1^1
+}
+
+#vcd4={
+	l12
+	rrr rrr rrr rr
+	IF(VOCALOID=0){r96r96r96r96}
+	Ex(127,80,!1^1^1)f#^1^1^1
+}
+
+IF(VOCALOIDPART=1) {
+	IF(BGMONLY=0) {
+		TR(1)
+			v120
+			VVoice(Clarinet)
+			#time5macro
+			#voiceon={VV=1 #v127}
+			#voiceoff={VV=1 #v127}
+			IF(SMAFMODE=0) { [8 r1] }
+			v127
+			q80
+			o5
+			#melody1
+			IF(SMAFMODE=0) { #melody2 }
+
+		TR(2)
+			K=0
+			v120
+			VVoice(AltoSax)
+			#time5macro
+			#voiceon={VV=1 #v127}
+			#voiceoff={VV=0 #v0}
+			IF(SMAFMODE=0) { [8 r1] }
+			v127
+			q80
+			o4
+			#melody1
+			IF(SMAFMODE=0) { #melody2 }
+	}
+	TR(5)
+		v120
+		#time5macro
+		VVoice(NylonGuitar)
+		o5
+		IF(SMAFMODE=0) { #vcintro1 }
+		LoopPlay({#vca1 #vcb1},#vcc1)
+		IF(SMAFMODE=0) { #vcd1 }
+
+	TR(6)
+		v120
+		#time5macro
+		VVoice(NylonGuitar)
+		o4
+	 	IF(SMAFMODE=0) { #vcintro2 }
+		LoopPlay({#vca2 #vcb2},#vcc2)
+		IF(SMAFMODE=0) { #vcd2 }
+
+	TR(7)
+		v120
+		#time5macro
+		VVoice(NylonGuitar)
+		o4
+		IF(SMAFMODE=0) { #vcintro3 }
+		LoopPlay({#vca3 #vcb3},#vcc3)
+		IF(SMAFMODE=0) { #vcd3 }
+
+	TR(8)
+		v120
+		#time5macro
+		VVoice(NylonGuitar)
+		#v90
+		o5
+		IF(SMAFMODE=0) { [8 r1] }
+		LoopPlay({[24 r1]},{[4 r1]})
+		IF(SMAFMODE=0) { [6 r1] #vcd4 }
+
+	TR(9)
+		v120
+		#time5macro
+		VVoice(AcousticBass)
+		o3
+		q75
+		IF(SMAFMODE=0) { #bassintro }
+		LoopPlay({#bass1 #bass2},#bass3)
+		IF(SMAFMODE=0) { #bass4 }
+}
+
+IF(RHYTHMPART=1) {
+	TR(10)
+		v90
+		#time5macro
+		#v100
+		IF(SMAFMODE=3) {
+			Voice(3,125)
+		} ELSE {
+			IF(SMAFMODE=7) {
+				Voice(3,125)
+			} ELSE {
+				//Voice(JazzSet)
+			}
+		}
+		$b{n(Kick1),} //36
+		$5{n(Kick2),} //35
+		$S{n(Sticks),} //31
+		$k{n(SideStick),}//37
+		$s{n(Snare1),}//38
+		$h{n(ClosedHiHat),}//42
+		$p{n(PedalHiHat),}//44
+		$o{n(OpenHiHat),}//46
+		$c{n(CrashCymbal1),}//46
+		$y{n(CrashCymbal2),}//57
+		$R{n(RideCymbal1),}//51
+
+		#pt1={
+			v90
+			Sub { [2 Rhythm {o4h6h12} ] }
+			[2 r4 Rhythm{s4} ]
+		}
+
+		#pt2={
+			v90
+			Sub{Rhythm{c2y2}}
+			Sub { [2 Rhythm {o4h6h12} ] }
+			r12r12 v70 Rhythm{s12} [3 v90 Rhythm{s12} v80 Rhythm{s12} v70 Rhythm{s12}]
+			Sub{Rhythm{c2}}
+		}
+
+		#pt22={
+			v90
+			Sub{Rhythm{c2y2}}
+			Sub { [2 Rhythm {o4h6h12} ] }
+			r12r12 v70 Rhythm{s12} [3 v90 Rhythm{s12} v80 Rhythm{s12} v70 Rhythm{s12}]
+		}
+
+		#pt3={
+			v90
+			Sub { [2 Rhythm {o4h6h12} ] }
+			r4 Rhythm{s4} r6 Rhythm{v70s12 v90s12v80s12v70s12}
+			v90 Sub{Rhythm{y2}}
+		}
+
+		#pt4={
+			v90
+			Sub { Rhythm{c2y2} }
+			Sub { [2 Rhythm {o4h6h12} ] }
+			[4 Rhythm{v90s12v80s12v70s12}]
+
+			v90
+			Sub { Rhythm{c4r6y2} }
+			Sub {Rhythm{o4 r6o12 r6h12 h12h12h12}}
+			Rhythm{s4 r6s12 r6s12 s12s12s12}
+		}
+
+		#pt5={
+			v90
+			Sub { [2 Rhythm {o4h6h12} ] }
+			Sub {Rhythm{r4 s4 r12r12 s12 s12 s12 s12}}
+			r1
+		}
+
+		#pt6={
+			Sub{Rhythm{c12r12r12 r12r12y12 r12r12r12 r12r12c12}}
+			Rhythm{s12r12r12 r12r12s12 r12r12r12 r12r12s12}
+			Rhythm{R4 R6 R8 R9 R10 R11 R12 R12 R11 R10 R8 R6 R4 R3 R2}
+			IF(SMAFMODE=1){
+				v0
+				Rhythm{R1R1}
+			}
+		}
+		IF(SMAFMODE=0) {
+			[6 #pt1 ]
+			#pt2
+			#pt2
+		}
+		#tr10={
+			[7 #pt1 ]
+			#pt3
+			[6 #pt1 ]
+			#pt4
+
+			#pt1 #pt5
+			#pt1 #pt5
+			#pt5 #pt5 #pt1 #pt5
+		}
+		#tr10add={
+			Sub{Rhythm{c1}}
+			[3 #pt1 ]
+			IF(SMAFMODE=0) { #pt2 } ELSE { #pt22 }
+		}
+		LoopPlay(#tr10,#tr10add)
+		IF(SMAFMODE=0) { 
+			[5 #pt1]
+			#pt2
+			#pt6
+		}
+}
+//End
+
+//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+// VOCALOID用歌詞
+IF(0){
+
+(Track1歌詞)
+
+ほろお
+
+
+たてわ　すこぷ よこわ
+つるはし ほりすすめ
+てらせた　いまつ　だい
+やのため ほりすすめ
+かさねて すこぷ
+ひろえた いま  つ
+
+ほりすすめ
+
+たてに　すこぷ よこに
+つるはし ほりすすめ
+ひろえた いまつ だい
+やのため ほりすすめ
+
+コンボわ きまる
+ロマンわ ひかる
+パズルみたく さいくつをし
+よ お
+
+ジャクわ　どこでも
+クイわ　ななめ
+キングよ つらぬけ
+ジョカわ つよい
+
+すこおぷ　つかえ
+つるはし　つかえ
+がんばん つらぬき
+ダイヤをさがせ
+
+きいのすこぷ　てつの
+すこおぷ ほりすすめ
+きんのすこぷ　だいや
+のすこぷ　ほりすすめ
+
+かさねて つるはし
+もえよたいまつ
+ほりすすめ
+
+きいのつ るはし　てつの
+つるはし ほりすすめ
+きんのつ　るはし　だいや
+のつるはし ほりすすめ
+
+コンボを きめて
+ロマンを ひからせ
+パズルみたく さいくつをし
+よ お
+
+エスで　じつわ
+キングを　ほれる
+コンボを きめて
+ぎゃくてんねらえ
+
+スコップ　つかえ
+つるはし　つかえ
+がんばん つらぬき
+ダイヤをさがせ
+
+ーーーーーーーーーーーーーーーーーーーーー
+(Track2歌詞)
+
+だいや
+
+たてわ　すこぷ よこわ
+つるはし ほりすすめ
+てらせた　いまつ　だい
+やのため ほりすすめ
+かさねて すこぷ
+ひろえた いま  つ
+
+ほりすすめ
+
+たてに　すこぷ よこに
+つるはし ほりすすめ
+ひろえた いまつ だい
+やのため ほりすすめ
+
+コンボわ きまる
+ロマンわ ひかる
+パズルみたく さいくつをし
+よ お
+
+ジャクわ　どこでも
+クイわ　ななめ
+キングよ つらぬけ
+ジョカわ つよい
+
+すこおぷ　つかえ
+つるはし　つかえ
+がんばん つらぬき
+ダイヤをさがせ
+
+きいのすこぷ　てつの
+すこおぷ ほりすすめ
+きんのすこぷ　だいや
+のすこぷ　ほりすすめ
+
+かさねて つるはし
+もえよたいまつ
+ほりすすめ
+
+きいのつ るはし　てつの
+つるはし ほりすすめ
+きんのつ　るはし　だいや
+のつるはし ほりすすめ
+
+コンボを きめて
+ロマンを ひからせ
+パズルみたく さいくつをし
+よ お
+
+エスで　じつわ
+キングを　ほれる
+コンボを きめて
+ぎゃくてんねらえ
+
+スコップ　つかえ
+つるはし　つかえ
+がんばん つらぬき
+ダイヤをさがせ
+
+
+ーーーーーーーーーーーーーーーーーーーーー
+(Track3/4歌詞)
+
+だいや
+ーーーーーーーーーーーーーーーーーーーーー
+(Track6/7/8歌詞)
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+たたたたたたたたたたたたたたたたたたたたたた
+
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+たたたたたたたたたたたた
+ちゃちゃたたたた
+ちゃちゃ
+ちゃちゃ
+たたたた
+たたたた
+ちゃちゃ
+ちゃちゃ
+ちゃちゃ
+ちゃちゃたたたた
+
+ちゃちゃちゃちゃ
+ちゃちゃ
+た　たたた　たたた　たたた
+
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+ちゃちゃちゃちゃ
+たたたたたたたたたたたた
+
+ちゃちゃたたたた
+ちゃちゃ
+ちゃちゃ
+たたたた
+たたたた
+ちゃちゃ
+ちゃちゃ
+ちゃちゃ
+ちゃちゃたたたた
+
+ちゃちゃ
+ちゃちゃ
+ちゃちゃ
+ちゃちゃ
+ちゃちゃ
+ちゃちゃ
+ちゃちゃら
+
+ーーーーーーーーーーーーーーーーーーーーー
+(Track8歌詞)
+
+ら
+
+ーーーーーーーーーーーーーーーーーーーーー
+(Track9歌詞)
+
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅとぅ
+とぅとぅとぅとぅとぅとぅとぅら
+
+}
+
+//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+// SoundEngine v5用 (VOCALOIDのみ)
+IF(0) {
+
+[Effector]
+EffectorName=Reverb
+Parameter1=1.1019
+Parameter2=420
+Parameter3=20
+Parameter4=88.5
+Parameter5=100
+Parameter6=3.44
+Parameter7=25
+Parameter8=58
+Parameter9=-34.56
+Parameter10=0
+
+[Effector]
+EffectorName=Reverb
+Parameter1=1.6084
+Parameter2=24000
+Parameter3=115.245
+Parameter4=100
+Parameter5=54
+Parameter6=2.86102e-008
+Parameter7=12.5892
+Parameter8=73
+Parameter9=-8.64
+Parameter10=-1.92
+}
+//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+IF(0){
+
+##############################################################################
+# TiMidiTy Config (v2.0)
+
+dir ../patches/guspat/izumo/inst/GUS
+dir ../patches/sf2_all
+dir ../patches/sf2_all/atomic
+dir ../patches/sf2_all/fluid3
+dir ../patches/sf2_all/realgs
+dir ../patches/sf2_all/ultimate
+dir ../patches/sf2_all/scc
+dir ../patches/sf2_all/GMRBasico
+dir ../patches/sf2_all/ForClassicalMusic
+dir ../patches/sf2_part/drumkit
+dir ../patches/sf2_part/piano
+dir ../patches/sf2_part/famicom
+dir ../patches/sf2_all/musix
+dir ../patches/sf2_all/Giant
+dir ../patches/sf2_part/drumkit/tr808909
+
+##############################################################################
+
+bank 0
+
+	# bass
+	32 %font "FluidR3GM.SF2" 0 32 amp=270 keep=env
+
+	# guitar
+	24 %font "5.7bank2.sf2" 0 24 amp=100 keep=env rate=:::220 offset=:::0
+
+	# altosax
+	65 %font "FluidR3GM.SF2" 0 65 amp=90 keep=env
+
+	# basoon
+	70 %font "FluidR3GM.SF2" 0 70 amp=100 keep=env
+
+	# clalinet
+	71 "clarinet.pat" amp=390 keep=env rate=240:130:120:200 offset=255:240:160:0
+
+##############################################################################
+
+# Standard drums
+
+drumset 0
+
+	#bd
+#	36 %font "TR-909 Drums.SF2" 128 0 36 amp=100
+
+	#snare
+	38 %font "HS TR-808 Drums.sf2" 128 0 38 amp=511
+
+	#hihat
+	42 %font "HS TR-808 Drums.sf2" 128 0 42 amp=120
+	44 %font "HS TR-808 Drums.sf2" 128 0 44 amp=120
+	46 %font "HS TR-808 Drums.sf2" 128 0 46 amp=90
+
+	#crash
+	49 %font "HS TR-808 Drums.sf2" 128 0 49 amp=511 pan=+100
+	57 %font "HS TR-808 Drums.sf2" 128 0 49 amp=511 pan=-40
+
+	# ride
+	51 %font Titanic_200_GMGS_1.2.sf2 128 0 51 amp=250 pan=+70 tune=+0
+	53 %font Titanic_200_GMGS_1.2.sf2 128 0 51 amp=250 pan=+70 tune=+0
+
+#extension altassign 42 44 46
+}
